@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,aAAa,CAAC;EACZ,OAAO,EAAE,MAAM;CAehB;;AAhBD,AAEE,aAFW,CAEX,EAAE,AAAA,gBAAgB,CAAC;EACjB,SAAS,EAAE,MAAM;EACjB,UAAU,EAAE,CAAC;EACb,aAAa,EAAE,IAAI;CACpB;;AANH,AAOE,aAPW,CAOX,EAAE,AAAA,mBAAmB,CAAC;EACpB,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,GAAG;EAChB,UAAU,EAAE,MAAM;EAClB,WAAW,EAAE,yLAE4C;EACzD,aAAa,EAAE,IAAI;CACpB",
+    "sources": [
+        "style.scss",
+        "_bookList.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}

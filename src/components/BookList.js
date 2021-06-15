@@ -1,5 +1,6 @@
 import React from "react";
 import Book from "./Book";
+import "../css/style.css";
 
 class BookList extends React.Component {
   render() {
