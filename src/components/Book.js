@@ -1,4 +1,5 @@
 import React from "react";
+import "../css/style.css";
 
 class Book extends React.Component {
   render() {
