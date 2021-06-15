@@ -1,3 +1,4 @@
+@import "variables";
 #portfolio {
   .portfolio-item {
     max-width: 25rem;
@@ -12,24 +13,24 @@
         position: absolute;
         width: 100%;
         height: 100%;
-        background: rgba(254, 209, 54, 0.9);
+        background: $primary-color;
         align-items: center;
         justify-content: center;
         opacity: 0;
         transition: opacity ease-in-out 0.25s;
         &:hover {
-          opacity: 1;
+          opacity: 0.8;
         }
         .portfolio-hover-content {
           font-size: 1.25rem;
-          color: white;
+          color: $white-color;
         }
       }
     }
     .portfolio-caption {
       padding: 1.5rem;
       text-align: center;
-      background-color: #fff;
+      background-color: $white-color;
       .portfolio-caption-heading {
         font-size: 1.5rem;
         font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
