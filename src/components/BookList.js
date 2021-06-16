@@ -1,8 +1,10 @@
 import React from "react";
 import Book from "./Book";
+import { BookContext } from "../contexts/BookContext";
 import "../css/style.css";
 
 class BookList extends React.Component {
+  static contextType = BookContext;
   render() {
     const bookList = this.props.books.map((book, i) => {
       return <Book book={book} key={i} />;
