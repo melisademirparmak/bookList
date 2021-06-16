@@ -1,6 +1,6 @@
 import React from 'react';
 import Book from './Book';
-import { BookContext } from '../contexts/BookContext';
+import BookContext from '../contexts/BookContext';
 import '../css/style.css';
 
 class BookList extends React.Component {
@@ -21,7 +21,8 @@ class BookList extends React.Component {
           <div className="row">
             {books.map((book, i) => {
               return <Book book={book} key={i} />;
-            })};
+            })}
+            ;
           </div>
         </div>
       </section>
