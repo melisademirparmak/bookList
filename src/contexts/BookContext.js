@@ -1,6 +1,7 @@
 import React from 'react';
+import Book from '../components/Book';
 
-export default React.createContext([
+const myContext = React.createContext([
   {
     title: 'Kırmızı Pazartesi',
     author: 'Gabriel Garcia Marquez',
@@ -56,6 +57,9 @@ export default React.createContext([
       '1968-1970 yılları arasında geçen olaylar, o günün toplumsal gerçeklerini de satırlara taşıyor. Ama romanın odağında bu toplumsal olaylar değil üçlü bir aşk var. Gençliğin rüzgârıyla hareketlenen İmkânsızın Şarkısını ölümle erken karşılaşan gençlerin hayatı yönlendiriyor. Hiçbir şeyin önem taşımadığı, amaçsızlığın ağır bastığı, özgür seksin kol gezdiği bir öğrenci hayatı... Ama diğer yanda da yoğun duygular var... İmkânsız aşklar, imkânsız şarkılar söyleten. Hemen hemen her Japon gencinin okuduğu roman anayurdu dışında da çok kişi tarafından sahipleniliyor.',
   },
 ]);
+
+console.log(myContext);
+export default myContext;
 
 // Default Value -> this.context
 // Provider -> Consumer
