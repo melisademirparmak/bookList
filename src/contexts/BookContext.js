@@ -4,7 +4,7 @@ import Book from '../components/Book';
 //export when sending data somewhere
 export const BookContext = React.createContext();
 
-class myData extends React.Component {
+class BookContextProvider extends React.Component {
   state = {
     books: [
       {
@@ -65,11 +65,15 @@ class myData extends React.Component {
   };
 
   render() {
-    return <BookContext.Provider value={this.state}></BookContext.Provider>;
+    return (
+      <BookContext.Provider value={this.state}>
+        {this.props.children}
+      </BookContext.Provider>
+    );
   }
 }
 
-export default myData;
+export default BookContextProvider;
 
 // Default Value -> this.context
 // Provider -> Consumer
