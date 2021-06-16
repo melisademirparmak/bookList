@@ -1,5 +1,4 @@
 import React from 'react';
-import Book from '../components/Book';
 
 //export when sending data somewhere
 export const BookContext = React.createContext();
@@ -66,7 +65,7 @@ class BookContextProvider extends React.Component {
 
   render() {
     return (
-      <BookContext.Provider value={this.state}>
+      <BookContext.Provider value={{ ...this.state }}>
         {this.props.children}
       </BookContext.Provider>
     );
