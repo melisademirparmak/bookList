@@ -1,11 +1,13 @@
-import React from "react";
-import BookList from "./BookList";
-
+import React from 'react';
+import BookList from './BookList';
+import myData from '../contexts/BookContext';
 class App extends React.Component {
   render() {
     return (
       <div>
-        <BookList/>
+        <myData>
+          <BookList />
+        </myData>
       </div>
     );
   }
